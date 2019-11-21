@@ -1,0 +1,5 @@
+.middle-bar {
+    height: 480px;
+    padding:10px;
+    overflow-y:scroll;
+}

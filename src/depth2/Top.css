@@ -1,0 +1,6 @@
+.top-bar {
+    height: 110px;
+    padding:10px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
