@@ -6,7 +6,7 @@ class Middle extends Component {
     render() {
       return(
           <div className="middle-bar">
-              <EquipmentWithData equipments={this.props.data.equipments} datas={this.props.data.datas} onClick={this.props.manageCnt}/>
+              <EquipmentWithData equipments={this.props.data.equipments} datas={this.props.data.datas} manageCnt={this.props.manageCnt}/>
           </div>
       );
     }

@@ -10,10 +10,10 @@ class Layout extends Component{
     cnt:0
   }
   
-  manageCnt = (e) => {
-    alert(this.state.cnt);
+  manageCnt = (num) => {
+    alert(this.state.cnt + ' / ' + num);
     this.setState({
-      cnt: this.state.cnt + 1
+      cnt: num
     });
   }
     render() {
@@ -21,7 +21,7 @@ class Layout extends Component{
     <div className="layout">
           <Header/>
           <Top data={this.props.data.equipments} />
-          <Middle data={this.props.data} onClick={() => this.manageCnt}/>
+          <Middle data={this.props.data} manageCnt={() => this.manageCnt}/>
           <Bottom cnt={this.state.cnt}/>
     </div>
     );

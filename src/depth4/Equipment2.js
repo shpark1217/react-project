@@ -14,7 +14,7 @@ class Equipment2 extends Component {
           const { equipments, datas } = this.props;
           const result = datas.filter(data => data.eid == eid);
           const list = result.map(
-            datas => (<Datas key={equipments.id} datas={datas} onClick={this.props.manageCnt}/>)
+            datas => (<Datas key={datas.id} datas={datas} manageCnt={this.props.manageCnt}/>)
           );
       return(
         <div>

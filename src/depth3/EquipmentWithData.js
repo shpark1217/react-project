@@ -26,7 +26,7 @@ handleClick = (key) => {
       const { equipments, datas } = this.props;
       const list = equipments.map(
         (equipments, i) => (<Equipment2 key={equipments.id} eid={equipments.eid} equipments={equipments} datas={datas} key={i} onClick={() => this.handleClick(i)} 
-        isSelectedKey={this.state.selectedKey != -1}/>)
+        isSelectedKey={this.state.selectedKey != -1} manageCnt={this.props.manageCnt}/>)
       );
       return(
           <div>
